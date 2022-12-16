@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;600;700&family=Raleway:wght@100;300;400;600;700;800&display=swap');
+
+:root {
+    --font-main: 'Raleway', sans-serif;
+    --font-secundary: 'Mukta', sans-serif;
+    --color-one: #025E73;
+    --color-two: #F2668B;
+    --color-three: #011F26;
+    --color-four: #026873;
+    --color-button: #03A688;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: var(--color-two);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.header > .tittle-header {
+    font-family: var(--font-main);
+    font-size: 2em;
+    color: var(--color-three);
+    letter-spacing: 0.2em;
+}
+
+.header > .description-header {
+    font-family: var(--font-secundary);
+    font-size: 0.8em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .formLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-one);
+    padding: 3em;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+.container > .formLogin > h2 {
+    font-family: var(--font-main);
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+}
+
+.container > .formLogin > label {
+    font-family: var(--font-secundary);
+    margin-bottom: 0.3em;
+}
+
+.container > .formLogin > input {
+    padding: 0.5em 1.6em;
+    border: none;
+}
+
+.container > .formLogin > .btnInput {
+    padding: 1em 1.4em;
+    margin-top: 1.2em;
+    font-family: var(--font-secundary);
+    border: none;
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background: var(--color-two);
+    font-weight: bold;
+}
+
+.container > .formLogin > .btnInput:hover {
+    border-top-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    transition: 2s;
+    background: var(--color-button);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > .description-footer {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-secundary);
+}
+
+.footer > .description-footer > a {
+    text-decoration: none;
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    color: var(--color-three);
+}
