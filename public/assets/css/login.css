@@ -100,17 +100,25 @@ body {
     background: var(--color-button);
 }
 
+.container > .formLogin > .statusForm {
+    margin-top: 1em;
+    padding: 1em;
+    font-family: var(--font-secundary);
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .footer > .description-footer {
-    position: absolute;
-    bottom: 0;
     font-family: var(--font-secundary);
+    margin-top: 4em;
 }
 
 .footer > .description-footer > a {
