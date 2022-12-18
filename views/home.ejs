@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/home.css">
     <title>Dev Bets - Home</title>
 </head>
 <body>
-    <h1>Bem-vindo <%= nameUser %></h1>
+    <section class="header">
+        <h1>Olá <%= nameUser %></h1>
+        <p>Comece suas apostas</p>
+    </section>
+
+    <section class="main">
+        <p class="money">
+
+        </p>
+        <h2>Iniciar apostas</h2>
+        <p class="bet">
+
+        </p>
+        <label for="">
+            Qual valor você deseja apostar?
+        </label>
+        <input type="number" name="betValue">
+        <label for="">Qual será o número sorteado?</label>
+        <input type="number" name="Useropinion">
+        <button class="initialBet">Apostar</button>
+
+    </section>
+
+    <section class="footer">
+        <p class="description-footer">Developer by <a href="#">Vinicius Soares</a></p>
+    </section>
 </body>
 </html>

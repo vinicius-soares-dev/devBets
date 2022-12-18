@@ -98,6 +98,7 @@ body {
     border-bottom-left-radius: 1em;
     transition: 2s;
     background: var(--color-button);
+    cursor: pointer
 }
 
 .container > .formLogin > .statusForm {
