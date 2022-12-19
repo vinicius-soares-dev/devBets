@@ -23,3 +23,107 @@ body {
     width: 100vw;
     background: var(--color-three);
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.header > .tittle-header {
+    font-family: var(--font-main);
+    font-size: 2em;
+    color: var(--color-button);
+}
+
+.header > .description-header {
+    font-family: var(--font-secundary);
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main > .formBet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-two);
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: 1em;
+
+}
+
+.main > .formBet >  .tittle-form {
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    color: var(--color-three);
+    margin-bottom: 1em;
+}
+
+.main > .formBet > .description-form {
+    font-family: var(--font-secundary);
+
+}
+
+.main > .formBet > label {
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+
+.main > .formBet > input {
+    padding: 0.6em 1.3em;
+    font-family: var(--font-main);
+    border: none;
+    margin-bottom: 0.6em;
+}
+
+.main > .formBet > .initialBet {
+    padding: 1em 1.4em;
+    font-family: var(--font-secundary);
+    background: var(--color-button);
+    border-top-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
+    border: none;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.main > .formBet > .initialBet:hover {
+    background: var(--color-one);
+    border-top-right-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
+    border-top-left-radius: 0em;
+    border-bottom-right-radius: 0em;
+    transition: 2s;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer > .description-footer {
+    margin-top: 9em;
+    font-family: var(--font-secundary);
+    color: var(--color-button);
+}
+
+.footer > .description-footer > a {
+    text-decoration: none;
+    font-family: var(--font-secundary);
+    color: var(--color-two);
+    font-weight: bolder;
+}

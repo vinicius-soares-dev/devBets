@@ -9,30 +9,25 @@
 </head>
 <body>
     <section class="header">
-        <h1>Olá <%= nameUser %></h1>
-        <p>Comece suas apostas</p>
+        <h1 class="tittle-header">Olá <%= nameUser %></h1>
+        <p class="description-header">Comece suas apostas</p>
     </section>
 
     <section class="main">
-        <p class="money">
-
-        </p>
-        <h2>Iniciar apostas</h2>
-        <p class="bet">
-
-        </p>
-        <label for="">
-            Qual valor você deseja apostar?
-        </label>
-        <input type="number" name="betValue">
-        <label for="">Qual será o número sorteado?</label>
-        <input type="number" name="Useropinion">
-        <button class="initialBet">Apostar</button>
+        <form action="/betsresult" method="POST" class="formBet">
+            <h2 class="tittle-form">Iniciar apostas</h2>
+            <p class="description-form">Escolha um número de 0 a 100</p>
+            <label for="">Em qual número você aposta?</label>
+            <input type="number" name="numberBet">
+            <label for="">Qual valor você deseja apostar?</label>
+            <input type="number" name="valueUser">
+            <button type="submit" class="initialBet">Apostar</button>
+        </form>
 
     </section>
 
     <section class="footer">
-        <p class="description-footer">Developer by <a href="#">Vinicius Soares</a></p>
+        <p   class="description-footer">Developed by <a href="#">Vinicius Soares</a></p>
     </section>
 </body>
 </html>
