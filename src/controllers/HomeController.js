@@ -15,11 +15,12 @@ exports.Home = (req, res) => {
         return;
     };
 
-    if(passwordInput.length < 6 || passwordInput.lenght > 11) {
+    if(passwordInput.length < 6 || passwordInput.length > 11) {
         return;
     };
 
     res.locals.nameUser = nameInput;
+
 
     res.render('home');
 }
