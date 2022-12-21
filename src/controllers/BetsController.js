@@ -8,29 +8,28 @@ exports.Bets = (req, res) =>  {
         return;
     };
 
-    if(numberChoice.length > 100) {
+    if(numberChoice > 100) {
         return;
     };
-
+    
     if(!userValue || userValue == null || userValue == undefined) {
         return;
     };
 
-    if(userValue.length > coinValue) {
+    if(userValue > coinValue) {
         return;
     };
 
     if(numberChoice == randomNumber) {
-        coinValue + numberChoice;
-        return;
+        coinValue + userValue;
+    } else {
+        coinValue - userValue;
     };
 
-    if(numberChoice !== randomNumber) {
-        coinValue - numberChoice;
-        return;
-    };
+    
 
+    
+    res.locals.coins = coinValue;
 
-   
-    res.render('result', {coin: coinValue});
+    res.render('result');
 }
