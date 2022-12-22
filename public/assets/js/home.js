@@ -14,7 +14,7 @@ buttonInitial.addEventListener('click', (e) => {
 
     if(!numberUser.value || numberUser.value == null || numberUser.value == undefined) {
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
-        resUser.textContent = `Insira um número válido`;
+        resUser.textContent = `Insira um número válido.`;
         return;
     };
 
@@ -22,17 +22,18 @@ buttonInitial.addEventListener('click', (e) => {
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
         resUser.textContent = `Escolha um número de 0 a 100.`;
         return;
+
     };
 
     if(!valueUser.value || valueUser.value == null || valueUser.value == undefined) {
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
-        resUser.textContent = `Insira um valor válido`;
+        resUser.textContent = `Insira um valor válido.`;
         return;
     };
 
     if(coinUser < valueUser.value) {
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
-        resUser.textContent = `Você não tem moedas suficientes`;
+        resUser.textContent = `Você não tem moedas suficientes.`;
         return;
     }
 
@@ -40,14 +41,14 @@ buttonInitial.addEventListener('click', (e) => {
         coinUser = coinUser + valueUser.value;
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
         resUser.textContent = `Você acertou o número e ganhou + ${valueUser.value} moedas.`;
-        resBets.textContent = `Número sorteado: ${randomNumber}`;
+        resBets.textContent = `Número sorteado: ${randomNumber}.`;
     };
 
     if(numberUser.value !== randomNumber) {
         coinUser = coinUser - valueUser.value;
         moneyUser.textContent = `Você tem ${coinUser} moedas.`;
         resUser.textContent = `Você errou o número e perdeu ${valueUser.value} moedas.`;
-        resBets.textContent = `Número sorteado: ${randomNumber}`;   
+        resBets.textContent = `Número sorteado: ${randomNumber}.`;   
     };
 
     randomNumber = Math.floor(Math.random() * 100);
